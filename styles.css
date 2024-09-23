@@ -1,101 +1,143 @@
+/* Body Settings */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
 }
 
-.header {
-    background-image: url('https://example.com/subaru-crosstrek.jpg');
+/* Hero Section */
+.hero {
+    background-image: url('./images/crosstrek5.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
     position: relative;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.header h1 {
+.hero-content h1 {
     font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
-.header p {
-    font-size: 1.5rem;
-}
-
-.features {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.features h2 {
-    margin-bottom: 40px;
-}
-
-.feature-box {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-.cta {
-    background-color: #0073e6;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.cta h2 {
-    margin-bottom: 20px;
+.hero-content h3 {
     font-size: 2rem;
 }
 
-.cta .btn {
-    background-color: white;
-    color: #0073e6;
-    border-radius: 20px;
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.hero .btn {
+    margin-top: 20px;
     padding: 10px 30px;
     font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2.5rem;
-    }
-
-    .header p {
-        font-size: 1.2rem;
-    }
+/* Key Features Section */
+.key-features {
+    padding: 60px 0;
+    background-color: #fff;
 }
 
-@media (max-width: 360px) {
-    .header h1 {
-        font-size: 2rem;
+.key-features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.key-features .feature-box {
+    padding: 20px;
+}
+
+.key-features .feature-content {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.key-features .feature-content:hover {
+    transform: translateY(-10px);
+}
+
+.key-features .fa {
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+.key-features .fa-3x {
+    font-size: 3rem;
+}
+
+.key-features .feature-box h4 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.gallery img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 0;
+    background-color: #0073e6;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 2rem;
+}
+
+.contact p {
+    font-size: 1.5rem;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
     }
 
-    .header p {
-        font-size: 1rem;
-    }
-
-    .cta h2 {
+    .hero-content h3 {
         font-size: 1.5rem;
     }
 
-    .cta .btn {
-        font-size: 1rem;
+    .key-features .feature-box {
+        margin-bottom: 30px;
+    }
+
+    .gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1.2rem;
     }
 }
